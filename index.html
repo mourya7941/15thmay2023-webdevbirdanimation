@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css bird animation</title>
+    <style>
+        .box {
+            width: 134px;
+            height: 149px;
+            background-image: url("img/twitter-img-spritesheet.png");
+            margin: 200px auto;
+            animation-name: birdanimation;
+            animation-duration: 0.4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes birdanimation {
+            from {
+                background-position: 0px, 0px;
+            }
+
+            to {
+                background-position: -450px, 0px;
+            }
+        }
+
+        .bird3 {
+            width: 150px;
+            height: 150px;
+            background-image: url("img/bird3.jpeg");
+            animation-name: xyz;
+            animation-duration: 2ms;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes xyz {
+            0% {
+                background-position: 0px, 0px;
+            }
+
+            5% {
+                background-position: 300px, 0px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="bird3"></div>
+</body>
+
+</html>
